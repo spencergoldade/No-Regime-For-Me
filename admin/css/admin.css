@@ -1,0 +1,8 @@
+/**
+ * No regime for me – Admin context (dashboard widget)
+ * Requires nrfm-base.css (shared quote/attribution/text). Design tokens: design/tokens/spacing.md
+ */
+
+.nrfm-content {
+	margin: 0;
+}

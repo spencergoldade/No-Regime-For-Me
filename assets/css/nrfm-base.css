@@ -1,0 +1,39 @@
+/**
+ * No regime for me – Shared base styles (quote, attribution, text)
+ * Used by both admin (dashboard widget) and shortcode. Enqueued before admin.css and shortcode.css.
+ * Design tokens: design/tokens/colors.md, typography.md, spacing.md
+ */
+
+/* Token-derived CSS custom properties (single source of truth) */
+.nrfm-content {
+	--nrfm-color-fg-default: #1d2327;   /* color-fg-default */
+	--nrfm-color-fg-muted: #646970;     /* color-fg-muted */
+	--nrfm-font-body: 14px;             /* body */
+	--nrfm-font-caption: 12px;           /* caption */
+	--nrfm-line-height: 1.5;
+	--nrfm-spacing-2: 8px;              /* spacing-2 */
+	--nrfm-spacing-5: 24px;             /* spacing-5 */
+}
+
+.nrfm-quote {
+	margin: 0 0 var(--nrfm-spacing-2, 8px);
+	padding: 0;
+	border: none;
+	font-size: var(--nrfm-font-body, 14px);
+	line-height: var(--nrfm-line-height);
+	color: var(--nrfm-color-fg-default, #1d2327);
+}
+
+.nrfm-attribution {
+	margin: 0;
+	font-size: var(--nrfm-font-caption, 12px);
+	color: var(--nrfm-color-fg-muted, #646970);
+	line-height: var(--nrfm-line-height);
+}
+
+.nrfm-text {
+	margin: 0;
+	font-size: var(--nrfm-font-body, 14px);
+	line-height: var(--nrfm-line-height);
+	color: var(--nrfm-color-fg-default, #1d2327);
+}

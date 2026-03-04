@@ -1,0 +1,27 @@
+# Tickets (review/backlog output)
+tickets/
+
+# Cursor and editor
+.cursor/
+*.cursorignore
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Composer (if added later)
+/vendor/
+
+# Build / artifacts (if added later)
+*.log
+node_modules/
+.phpunit.result.cache
+dist/
+*.zip
+
+# Local SVN checkout (when syncing to WordPress.org – keep outside repo or ignore)
+# plugin-svn/

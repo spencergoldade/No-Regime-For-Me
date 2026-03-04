@@ -1,0 +1,8 @@
+/**
+ * No regime for me – Shortcode context (front end)
+ * Requires nrfm-base.css (shared quote/attribution/text). Design tokens: design/tokens/spacing.md (spacing-5)
+ */
+
+.nrfm-content--shortcode {
+	margin: 0 0 var(--nrfm-spacing-5, 24px);
+}
