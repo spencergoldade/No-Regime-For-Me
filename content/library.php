@@ -12,7 +12,7 @@
  * - Keep short_quotes and admin_bar_tips very short (~10–12 words) for the admin bar.
  * - For tips, insights, and admin_bar_tips, do NOT add 'author' or 'source' – only 'text'.
  *
- * Need help? See design/content/citation-and-content.md and GETTING_STARTED_PLUGIN.md.
+ * Need help? See design/content/citation-and-content.md and design/content/content-guide.md.
  */
 
 return [
