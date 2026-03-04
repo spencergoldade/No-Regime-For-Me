@@ -2,7 +2,7 @@
 
 A WordPress plugin that adds short quotes and tips to the admin bar, and longer quotes, tips, and insights in a dashboard widget or on the front end via shortcode. Content is drawn from a built-in library focused on liberty, vigilance, and civic reflection.
 
-[**Getting started & docs**](GETTING_STARTED_PLUGIN.md) · [**Release & submission**](RELEASE.md)
+[**Release & submission**](RELEASE.md)
 
 ## Table of Contents
 
@@ -62,8 +62,7 @@ no-regime-for-me/
 ├── assets/                # CSS for shortcode and base styles
 ├── content/               # Quote/library (library.php; edit here to add content)
 ├── readme.txt             # WordPress.org readme (for plugin directory)
-├── RELEASE.md             # Testing, Git, and SVN submission notes
-└── GETTING_STARTED_PLUGIN.md
+└── RELEASE.md             # Testing, Git, and SVN submission notes
 ```
 
 The repo also includes `design/` (tokens, content guide, IA), `profiles/`, `tests/` (PHPUnit), and `.cursor/`. These are for development and design; they are not required on a live site.
