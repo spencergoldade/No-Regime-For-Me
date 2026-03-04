@@ -4,6 +4,8 @@ Uses WordPress admin spaces to educate and remind on the dangers of fascism and 
 
 **Requirements:** WordPress 5.9+, PHP 7.4+
 
-**Install:** Place the plugin folder in `wp-content/plugins/`, activate. Or zip the folder and use **Plugins → Add New → Upload Plugin**.
+**Install:** The distributable plugin lives in the **`no-regime-for-me/`** folder. Zip that folder (so the zip contains `no-regime-for-me/no-regime-for-me.php`, etc.) and upload via **Plugins → Add New → Upload Plugin**, or copy `no-regime-for-me` into `wp-content/plugins/` and activate.
+
+**Project structure:** The repo root holds project files (design docs, tickets, tests, `composer.json`). The **`no-regime-for-me/`** folder is the complete plugin package—everything needed to install the plugin in WordPress. Only that folder is zipped or copied for distribution.
 
 **Repo:** [github.com/spencergoldade/No-Regime-For-Me](https://github.com/spencergoldade/No-Regime-For-Me) · **Release/submission:** [RELEASE.md](RELEASE.md) · **License:** GPL v3+

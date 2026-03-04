@@ -6,7 +6,7 @@ This document covers testing, version control with Git, and preparing for WordPr
 
 ### Unit tests (PHPUnit)
 
-The plugin uses PHPUnit for unit tests. Run them from the plugin root:
+The plugin uses PHPUnit for unit tests. Run them from the repository root (the directory that contains `no-regime-for-me/`, `tests/`, and `composer.json`):
 
 ```bash
 composer install
@@ -24,7 +24,7 @@ Or with a path:
 * **NrfmContentTest** – Library loading, `get_random_admin_bar_item()`, `get_random_long_item()`, empty pool behavior.
 * **NrfmSettingsTest** – `sanitize_display_location()`: allowed values (`dashboard`, `shortcode`, `both`) and rejection of invalid/empty/non-string values.
 
-Tests run without a full WordPress install; `tests/bootstrap.php` defines the constants and includes the needed classes.
+Tests run without a full WordPress install; `tests/bootstrap.php` points to the `no-regime-for-me/` plugin package and loads the needed classes.
 
 ### Manual testing checklist
 
@@ -75,8 +75,8 @@ The WordPress.org plugin directory uses **Subversion (SVN)**, not Git. You maint
 ### Sync a release from Git to SVN
 
 1. In your **Git** repo, ensure the code is at the version you want (e.g. `1.0.0`), run tests, and confirm `readme.txt` “Stable tag” and the main plugin header “Version” match (e.g. `1.0.0`).
-2. Export or copy the plugin files that should be distributed (no `vendor/`, no `tests/`, no `.git`, no `design/` or `.cursor/` unless you intend to ship them). Typically: main PHP file, `admin/`, `includes/`, `assets/`, `content/`, `languages/` (if any), `readme.txt`, and `LICENSE` if you ship it.
-3. Update **trunk**:
+2. Copy the **`no-regime-for-me/`** folder (the complete plugin package). It already contains only distributable files: main PHP file, `admin/`, `includes/`, `assets/`, `content/`, `readme.txt`, and `LICENSE`. Do not include repo-only items like `vendor/`, `tests/`, `design/`, or `.cursor/`.
+3. Update **trunk** (replace the contents of `trunk/` with the contents of your `no-regime-for-me/` folder, so `trunk/no-regime-for-me.php`, `trunk/includes/`, etc.):
 
    ```bash
    cd /path/to/plugin-svn

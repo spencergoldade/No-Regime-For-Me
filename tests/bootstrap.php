@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-$plugin_root = dirname(__DIR__);
+$plugin_root = dirname( __DIR__ ) . '/no-regime-for-me';
 
 if (!defined('ABSPATH')) {
 	define('ABSPATH', $plugin_root . '/');
