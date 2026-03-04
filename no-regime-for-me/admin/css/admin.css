@@ -1,8 +1,134 @@
 /**
- * No regime for me – Admin context (dashboard widget)
- * Requires nrfm-base.css (shared quote/attribution/text). Design tokens: design/tokens/spacing.md
+ * No regime for me – Admin context (dashboard widget + settings page)
+ * Requires nrfm-base.css (shared quote/attribution/text). Design tokens: design/tokens/spacing.md, design/tokens/colors.md
  */
 
 .nrfm-content {
 	margin: 0;
+}
+
+/* -----------------------------------------------------------------------------
+   Settings page layout and sections
+   ----------------------------------------------------------------------------- */
+
+.nrfm-settings-wrap .nrfm-settings-intro {
+	margin: 24px 0 32px 0;
+	max-width: 640px;
+	color: #1d2327;
+}
+
+.nrfm-settings-wrap .nrfm-settings-intro p {
+	margin: 0 0 12px 0;
+}
+
+.nrfm-settings-wrap .nrfm-settings-intro p:last-child {
+	margin-bottom: 0;
+}
+
+.nrfm-settings-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	margin-top: 24px;
+}
+
+.nrfm-settings-main {
+	flex: 1 1 400px;
+	min-width: 0;
+}
+
+.nrfm-settings-sidebar {
+	flex: 0 1 280px;
+}
+
+/* Shortcode section – prominent, not option microcopy */
+.nrfm-settings-shortcode-box {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 16px 20px;
+	margin-bottom: 24px;
+}
+
+.nrfm-settings-section-title {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.nrfm-settings-shortcode-box p {
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	color: #1d2327;
+}
+
+.nrfm-settings-shortcode-box p:last-of-type {
+	margin-bottom: 8px;
+}
+
+.nrfm-settings-shortcode-value {
+	display: inline-block;
+	font-size: 15px;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	color: #1d2327;
+	user-select: all;
+}
+
+/* Sidebar boxes – postbox-style containers */
+.nrfm-settings-sidebar-box {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	margin-bottom: 20px;
+	padding: 16px 20px;
+}
+
+.nrfm-settings-sidebar-box:last-child {
+	margin-bottom: 0;
+}
+
+.nrfm-settings-sidebar-title {
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.nrfm-settings-sidebar-box p {
+	margin: 0 0 12px 0;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #1d2327;
+}
+
+.nrfm-settings-sidebar-box p:last-child {
+	margin-bottom: 0;
+}
+
+.nrfm-settings-sidebar-box a {
+	color: #2271b1;
+}
+
+.nrfm-settings-sidebar-box a:hover {
+	color: #135e96;
+}
+
+.nrfm-settings-refs-list {
+	margin: 8px 0 0 0;
+	padding-left: 20px;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #1d2327;
+}
+
+.nrfm-settings-refs-list li {
+	margin-bottom: 4px;
+}
+
+.nrfm-settings-refs-list li:last-child {
+	margin-bottom: 0;
 }

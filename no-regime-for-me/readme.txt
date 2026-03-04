@@ -9,7 +9,7 @@ Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or via shortcode.
+Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or on pages via the shortcode [no_regime_content].
 
 == Description ==
 
@@ -44,6 +44,17 @@ Yes. Edit the file `content/library.php` in the plugin folder. Follow the commen
 = How do I show longer content on the front end? =
 
 Add the shortcode `[no_regime_content]` to any post or page. In **No Regime For Me** settings, choose "Shortcode only" or "Both" so the shortcode is active.
+
+== Credits ==
+
+The plugin's quotes and ideas are drawn from six reference works (all in the public domain or otherwise credited). Credit where credit is due—and a reminder that fascism and authoritarianism are not new problems; these texts have long warned us.
+
+* *The Federalist Papers* (Hamilton, Madison, Jay)
+* *Readings on Fascism and National Socialism* (anthology)
+* *Secret Armies* (Project Gutenberg)
+* *The Pedigree of Fascism* (Project Gutenberg)
+* *It Can't Happen Here* – Sinclair Lewis
+* *They Thought They Were Free* – Milton Mayer
 
 == Screenshots ==
 

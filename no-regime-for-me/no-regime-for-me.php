@@ -2,7 +2,7 @@
 /**
  * Plugin Name: No Regime For Me
  * Plugin URI: https://github.com/spencergoldade/No-Regime-For-Me
- * Description: Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or via shortcode.
+ * Description: Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or on pages via the shortcode [no_regime_content].
  * Version: 1.0.0
  * Requires at least: 5.9
  * Requires PHP: 7.4

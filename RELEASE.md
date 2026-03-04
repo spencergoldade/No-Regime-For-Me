@@ -106,6 +106,7 @@ The WordPress.org plugin directory uses **Subversion (SVN)**, not Git. You maint
 * [ ] Plugin header “Version” matches the release (e.g. 1.0.0).
 * [ ] readme.txt “Stable tag” matches that version.
 * [ ] Changelog and Upgrade Notice in readme.txt updated.
+* [ ] readme.txt Credits/References section present and accurate (six works, public domain).
 * [ ] No dev-only files in the copied files (e.g. no `vendor/`, no `tests/`, no `.git`).
 * [ ] PHPUnit (or your test suite) passes.
 * [ ] Manual smoke test: activate, settings, shortcode, admin bar.
