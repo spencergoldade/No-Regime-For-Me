@@ -3,7 +3,7 @@
  * Plugin Name: No Regime For Me
  * Plugin URI: https://github.com/spencergoldade/No-Regime-For-Me
  * Description: Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or on pages via the shortcode [no_regime_content].
- * Version: 1.0.0
+ * Version: 1.0.1
  * Requires at least: 5.9
  * Requires PHP: 7.4
  * Author: Spencer Goldade
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NRFM_VERSION', '1.0.0' );
+define( 'NRFM_VERSION', '1.0.1' );
 define( 'NRFM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'NRFM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'NRFM_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -125,10 +125,6 @@ function nrfm_dashboard_widget_render(): void {
  * @return string HTML output.
  */
 function nrfm_shortcode_output(): string {
-	$location = get_option( NRFM_OPTION_DISPLAY_LOCATION, 'dashboard' );
-	if ( $location !== 'shortcode' && $location !== 'both' ) {
-		return '';
-	}
 	$item = NRFM_Content::get_random_long_item();
 	if ( empty( $item ) ) {
 		return '';

@@ -4,7 +4,7 @@ Donate link: https://spencergoldade.ca
 Tags: quotes, dashboard, shortcode, admin bar, inspiration
 Requires at least: 5.9
 Tested up to: 6.7
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -20,7 +20,7 @@ No Regime For Me adds light, thoughtful quotes and tips to your WordPress admin 
 * **Admin bar** – A random short quote or tip in the top admin bar when logged in.
 * **Dashboard widget** – Optional widget on the main Dashboard with a random longer quote, tip, or insight.
 * **Shortcode** – Use `[no_regime_content]` in any post or page to display one random longer item.
-* **Settings** – Choose where longer content appears: dashboard only, shortcode only, or both.
+* **Settings** – Choose whether to show the dashboard widget (shortcode always outputs where placed).
 
 All user-facing strings are translation-ready (Text Domain: no-regime-for-me). Settings use the WordPress Options API with sanitization and capability checks.
 
@@ -28,8 +28,8 @@ All user-facing strings are translation-ready (Text Domain: no-regime-for-me). S
 
 1. Upload the plugin folder to `/wp-content/plugins/`, or install via **Plugins → Add New** and upload a zip of the plugin folder.
 2. Activate **No Regime For Me** from the Plugins screen.
-3. Go to **No Regime For Me** in the admin menu to choose where longer content appears (dashboard, shortcode, or both).
-4. Optionally add the shortcode `[no_regime_content]` to a post or page to show a random quote, tip, or insight on the front end.
+3. Go to **No Regime For Me** in the admin menu to choose whether to show the dashboard widget.
+4. Add the shortcode `[no_regime_content]` to any post or page to show a random quote, tip, or insight on the front end.
 
 == Frequently Asked Questions ==
 
@@ -43,7 +43,7 @@ Yes. Edit the file `content/library.php` in the plugin folder. Follow the commen
 
 = How do I show longer content on the front end? =
 
-Add the shortcode `[no_regime_content]` to any post or page. In **No Regime For Me** settings, choose "Shortcode only" or "Both" so the shortcode is active.
+Add the shortcode `[no_regime_content]` to any post or page. It will display one random quote, tip, or insight. The settings screen controls only whether the dashboard widget is shown.
 
 == Credits ==
 
@@ -64,6 +64,10 @@ The plugin's quotes and ideas are drawn from six reference works (all in the pub
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix: shortcode now always outputs content when placed; the display setting controls only the dashboard widget.
+* Updated settings and readme copy to match.
+
 = 1.0.0 =
 * Initial release.
 * Admin bar short quotes and tips.
@@ -72,6 +76,9 @@ The plugin's quotes and ideas are drawn from six reference works (all in the pub
 * Settings: dashboard, shortcode, or both.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Shortcode fix: content now appears wherever you add [no_regime_content]; the setting only toggles the dashboard widget.
 
 = 1.0.0 =
 Initial release.

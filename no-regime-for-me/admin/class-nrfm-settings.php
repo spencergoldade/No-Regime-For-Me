@@ -90,7 +90,7 @@ class NRFM_Settings {
 				<div class="nrfm-settings-main">
 					<section class="nrfm-settings-shortcode-box" aria-labelledby="nrfm-shortcode-heading">
 						<h2 id="nrfm-shortcode-heading" class="nrfm-settings-section-title"><?php esc_html_e( 'Show content on your site', 'no-regime-for-me' ); ?></h2>
-						<p><?php esc_html_e( 'Add this shortcode to any post or page to display one random quote, tip, or insight. Choose "Shortcode only" or "Both" below for the shortcode to output content.', 'no-regime-for-me' ); ?></p>
+						<p><?php esc_html_e( 'Add this shortcode to any post or page to display one random quote, tip, or insight. The setting below controls only the dashboard widget.', 'no-regime-for-me' ); ?></p>
 						<code class="nrfm-settings-shortcode-value" aria-label="<?php esc_attr_e( 'Shortcode to copy', 'no-regime-for-me' ); ?>">[no_regime_content]</code>
 					</section>
 
@@ -106,7 +106,7 @@ class NRFM_Settings {
 										<label><input type="radio" name="<?php echo esc_attr( NRFM_OPTION_DISPLAY_LOCATION ); ?>" value="shortcode" <?php checked( $current, 'shortcode' ); ?> /> <?php esc_html_e( 'Shortcode only', 'no-regime-for-me' ); ?></label><br />
 										<label><input type="radio" name="<?php echo esc_attr( NRFM_OPTION_DISPLAY_LOCATION ); ?>" value="both" <?php checked( $current, 'both' ); ?> /> <?php esc_html_e( 'Both', 'no-regime-for-me' ); ?></label>
 									</fieldset>
-									<p class="description"><?php esc_html_e( 'Choose where longer content appears.', 'no-regime-for-me' ); ?></p>
+									<p class="description"><?php esc_html_e( 'Choose whether to show the dashboard widget. The shortcode always shows content where it is placed.', 'no-regime-for-me' ); ?></p>
 								</td>
 							</tr>
 						</table>
