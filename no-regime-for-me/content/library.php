@@ -15,6 +15,10 @@
  * Need help? See readme.txt. Contributors: see the project repository for content and citation guidelines.
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 return [
 
 	// =============================================================================

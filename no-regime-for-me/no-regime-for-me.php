@@ -3,7 +3,7 @@
  * Plugin Name: No Regime For Me
  * Plugin URI: https://github.com/spencergoldade/No-Regime-For-Me
  * Description: Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or on pages via the shortcode [no_regime_content].
- * Version: 1.0.1
+ * Version: 1.0.2
  * Requires at least: 5.9
  * Requires PHP: 7.4
  * Author: Spencer Goldade
@@ -11,7 +11,6 @@
  * License: GPL v3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: no-regime-for-me
- * Domain Path: /languages
  */
 
 declare(strict_types=1);
@@ -20,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NRFM_VERSION', '1.0.1' );
+define( 'NRFM_VERSION', '1.0.2' );
 define( 'NRFM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'NRFM_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'NRFM_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -38,7 +37,6 @@ if ( is_admin() ) {
 	require_once NRFM_PLUGIN_DIR . 'admin/class-nrfm-settings.php';
 }
 
-add_action( 'init', 'nrfm_load_textdomain' );
 add_action( 'init', 'nrfm_register_shortcode' );
 add_action( 'admin_bar_menu', 'nrfm_admin_bar_quote', 100 );
 add_action( 'wp_dashboard_setup', 'nrfm_dashboard_widget' );
@@ -46,17 +44,6 @@ add_action( 'wp_dashboard_setup', 'nrfm_dashboard_widget' );
 if ( is_admin() ) {
 	add_action( 'plugins_loaded', array( 'NRFM_Admin', 'init' ) );
 	add_action( 'plugins_loaded', array( 'NRFM_Settings', 'init' ) );
-}
-
-/**
- * Load plugin text domain for translations.
- */
-function nrfm_load_textdomain(): void {
-	load_plugin_textdomain(
-		'no-regime-for-me',
-		false,
-		dirname( NRFM_PLUGIN_BASENAME ) . '/languages'
-	);
 }
 
 /**

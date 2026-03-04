@@ -3,8 +3,8 @@ Contributors: spencergoldade
 Donate link: https://spencergoldade.ca
 Tags: quotes, dashboard, shortcode, admin bar, inspiration
 Requires at least: 5.9
-Tested up to: 6.7
-Stable tag: 1.0.1
+Tested up to: 6.9
+Stable tag: 1.0.2
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -64,6 +64,9 @@ The plugin's quotes and ideas are drawn from six reference works (all in the pub
 
 == Changelog ==
 
+= 1.0.2 =
+* Plugin Check compliance: remove Domain Path header and load_plugin_textdomain; add ABSPATH guard to content/library.php; update Tested up to 6.9.
+
 = 1.0.1 =
 * Fix: shortcode now always outputs content when placed; the display setting controls only the dashboard widget.
 * Updated settings and readme copy to match.
@@ -76,6 +79,9 @@ The plugin's quotes and ideas are drawn from six reference works (all in the pub
 * Settings: dashboard, shortcode, or both.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Plugin Check compliance for WordPress.org: no behavior changes.
 
 = 1.0.1 =
 Shortcode fix: content now appears wherever you add [no_regime_content]; the setting only toggles the dashboard widget.
