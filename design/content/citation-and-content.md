@@ -11,6 +11,8 @@
   - **Source:** Full book title as on the cover or in citations (e.g. “They Thought They Were Free: The Germans, 1933-45”, “It Can’t Happen Here”). For an essay in an anthology you may use “Essay Title, Book Title” in source if you want the essay name visible.
 - **No attribution** for tips, insights, or admin bar one-liners – they are original sentences inspired by the source books, not verbatim quotes.
 
+**Long quote without author:** If a long_quote entry has no `author` (and no `source`), the plugin renders it as a plain paragraph (same as tips/insights), not a blockquote. To get blockquote + “— Author, Source”, add `author` (and optionally `source`) to the entry.
+
 ## Content types and placement
 
 | Type | Where it appears | Attribution |

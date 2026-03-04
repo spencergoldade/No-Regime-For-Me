@@ -19,7 +19,8 @@ class NRFM_Display {
 	/**
 	 * Render one item (long quote, tip, or insight) as HTML.
 	 *
-	 * Quotes get a blockquote and styled attribution; tips and insights get plain paragraph.
+	 * Quotes with author get a blockquote and styled attribution; tips and insights get a plain paragraph.
+	 * When type is long_quote but author is empty, output is also a plain paragraph (not a blockquote).
 	 *
 	 * @param array{text: string, author?: string, source?: string, type: string} $item   Item from content library.
 	 * @param string                                                              $context 'admin' (dashboard) or 'shortcode' (front end).
