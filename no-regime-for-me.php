@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: No Regime For Me
- * Plugin URI: https://github.com/your_username/no-regime-for-me
+ * Plugin URI: https://github.com/spencergoldade/No-Regime-For-Me
  * Description: Displays short quotes in the admin bar and longer quotes, tips, and insights in a dashboard widget or via shortcode.
  * Version: 1.0.0
  * Requires at least: 5.9
